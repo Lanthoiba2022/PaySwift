@@ -3,7 +3,7 @@
 
 ## Features
 
-- **Initial Dummy Amount**: New users receive a set amount of virtual currency upon registration.
+- **Initial Dummy Amount**: New users receive a random amount of virtual currency upon registration.
 - **User-Friendly Interface**: Built with React and Tailwind for a smooth and responsive user experience.
 - **Secure Transactions**: Ensure secure transactions with robust backend support.
 - **Real-time Updates**: Instant updates on transaction status and user balance.
