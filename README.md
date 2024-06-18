@@ -1,5 +1,5 @@
-## PaySwift App
-# A basic version of Payment Interface
+# PaySwift App
+## A basic version of Payment Interface
 
 ## Features
 
