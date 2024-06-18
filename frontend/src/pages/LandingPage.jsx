@@ -2,10 +2,11 @@
 
 import { Link } from 'react-router-dom';
 import { Button } from '../components/Button'; 
+import '../../src/App.css'
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-gray-100 flex flex-col animate-background">
       <main className="flex-1 flex flex-col items-center justify-center text-center p-5">
         <h2 className="text-4xl font-bold mb-4">Welcome to PaySwift</h2>
         <p className="text-lg mb-8">
