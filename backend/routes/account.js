@@ -1,16 +1,22 @@
 const express = require('express');
+const cors = require('cors');
 const { authMiddleware } = require('../middleware');
 const { Account } = require('../db');
 const { default: mongoose } = require('mongoose');
+const app = express();
+
+app.use(cors());
+app.use(express.json());
 
 const router = express.Router();
 
 router.get("/balance", authMiddleware, async(req,res) => {
     const account = await Account.findOne({
         userId: req.userId
-    });
+    }).populate('userId', 'username');
 
     res.json({
+        username: account.userId.username,
         balance: account.balance
     })
 });
