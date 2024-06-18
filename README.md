@@ -1,6 +1,8 @@
 # PaySwift App
 ## A basic version of Payment Interface
 
+PaySwift App seamlessly facilitates the transfer of funds between registered users.
+
 ## Features
 
 - **Initial Dummy Amount**: New users receive a random amount of virtual currency upon registration.
@@ -15,7 +17,7 @@
 - **Database**: MongoDB
 - **Project Bundler**: Vite
 
-## References Used
+## References
 
 - Built with [React](https://reactjs.org/)
 - Utilizes [Tailwind CSS](https://tailwindcss.com/)
