@@ -18,7 +18,9 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-
+app.get("/", (req, res) => {
+  res.send("this is response");
+})
 app.use('/api/v1', rootRouter); 
 
 
