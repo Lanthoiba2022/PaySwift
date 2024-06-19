@@ -21,6 +21,9 @@ const app = express();
 
 // Middleware setup
 app.use(cors()); // Enable CORS for all routes, add allow specific origins here frontend link
+app.use(cors({
+  origin: 'https://pay-swift-fe.vercel.app/'
+}));
 app.use(express.json()); // Parse incoming JSON requests
 
 // MongoDB connection
