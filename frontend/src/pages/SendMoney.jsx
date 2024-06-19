@@ -18,7 +18,7 @@ export const SendMoney = () => {
         }
 
         axios.post(
-            "http://localhost:3000/api/v1/account/transfer",
+            "https://pay-swift-be.vercel.app/api/v1/account/transfer",
             {
                 to: id,
                 amount: parseFloat(amount) 
