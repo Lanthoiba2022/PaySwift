@@ -15,7 +15,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const rootRouter = require('./routes/index');
+const rootRouter = require('./routes');
 require('dotenv').config
 const app = express();
 
@@ -25,7 +25,7 @@ app.use(express.json()); // Parse incoming JSON requests
 
 // MongoDB connection
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect("mongodb+srv://khumanthemlanthoiba:yjzP9B4x57cp7X9W@cluster0.tvhtm8q.mongodb.net/PaySwift?retryWrites=true&w=majority");
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
