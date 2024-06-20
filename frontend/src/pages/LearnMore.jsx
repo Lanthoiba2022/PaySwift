@@ -48,7 +48,7 @@ const LearnMore = () => {
         </div>
       </main>
       <footer className="bg-white p-5 text-center shadow-md">
-        &copy; 2024 PaySwift. All rights reserved.
+        &copy; 2024 PaySwift by Lanthoiba. All rights reserved.
       </footer>
     </div>
   );
